@@ -5,8 +5,8 @@ const NavBar = () => {
   return (
     <>
       <div>
-        <nav className="w-full flex justify-between p-4">
-          <NavLink className="font-itim" to="/">BugsFly</NavLink>
+        <nav className="w-full flex justify-between items-center p-4 bg-dark">
+          <NavLink className="font-itim text-2xl" to="/">BugsFly</NavLink>
           <div>
             <NavLink className="mx-2 btn-primary" to="/login">
               Login

@@ -3,8 +3,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      fointFamily: {
-        itim: "Itim",
+      fontFamily: {
+        Itim: ["Itim"],
         mono: [
           "Source Code Pro",
           "ui-monospace",
@@ -16,6 +16,12 @@ module.exports = {
           '"Courier New"',
           "monospace",
         ],
+      },
+      colors: {
+        dark: "#031613",
+        darker: "#000D0A",
+        transparentDark: "rgba(66, 66, 66, 0.34)",
+        transparentDarker: "rgba(0, 0, 0, 0.28)",
       },
     },
   },

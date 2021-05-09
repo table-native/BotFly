@@ -10,13 +10,15 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <>
-      <NavBar />
-      <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={Signup} />
-        <Route path="/play" component={Play} />
-      </Switch>
+      <div className="font-mono h-screen text-gray-100 bg-gradient-to-b from-dark to-darker">
+        <NavBar />
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/play" component={Play} />
+        </Switch>
+      </div>
     </>
   );
 }
