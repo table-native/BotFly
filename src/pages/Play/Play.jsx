@@ -1,9 +1,19 @@
 import React from "react";
+import { NavLink, useParams } from "react-router-dom";
+import GamesDB from "./GamesDB";
+import GameCard 
 
 const Play = () => {
+  const { name } = useParams();
   return (
     <>
-      <h1>Play</h1>
+      <div className="grid grid-cols-autofill">
+        {
+          GamesDB.map((e)=>{
+            
+          })
+        }
+      </div>
     </>
   );
 };

@@ -11,3 +11,12 @@
 .btn-special {
   @apply bg-gradient-to-b from-green-600 to-green-900 font-itim text-xl text-black px-3 py-1;
 }
+.square {
+  @apply w-20 h-20 border-2;
+}
+.x {
+  @apply bg-green-500;
+}
+.o {
+  @apply bg-red-500;
+}

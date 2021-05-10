@@ -30428,6 +30428,17 @@ video {
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
+.square {
+  border-width: 2px;
+  height: 5rem;
+  width: 5rem
+}
+
+.x {
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

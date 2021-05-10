@@ -8,12 +8,12 @@ import Play from "./pages/Play/Play";
 import NavBar from "./components/NavBar";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
 
   return (
     <>
       <div className="font-mono h-screen text-gray-100 bg-gradient-to-b from-dark to-darker">
-        <NavBar />
+        <NavBar loggedIn={loggedIn} />
         <Switch>
           <Route
             path="/"
@@ -26,6 +26,9 @@ function App() {
           <Route path="/signup" component={Signup} />
           <Route path="/play">
             {loggedIn ? <Play /> : <Redirect to="/login" />}
+          </Route>
+          <Route path="/play/:name">
+            
           </Route>
         </Switch>
       </div>

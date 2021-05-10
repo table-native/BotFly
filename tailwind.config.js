@@ -12,13 +12,12 @@ module.exports = {
             transform: "translateY(-10px)",
           },
         },
-        
       },
       animation: {
-        'updown': 'updown 2s ease-in-out infinite alternate-reverse both'
+        updown: "updown 2s ease-in-out infinite alternate-reverse both",
       },
       width: {
-        hero: "26rem"
+        hero: "26rem",
       },
       fontFamily: {
         itim: ["itim"],
@@ -39,6 +38,9 @@ module.exports = {
         darker: "#000D0A",
         transparentDark: "rgba(66, 66, 66, 0.34)",
         transparentDarker: "rgba(0, 0, 0, 0.28)",
+      },
+      gridTemplateColumns: {
+        autofill: "repeat(auto-fill, minmax(0, 1fr))",
       },
     },
   },

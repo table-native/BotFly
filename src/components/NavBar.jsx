@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/img/Logo.svg";
 
-const NavBar = () => {
+const NavBar = ({ loggedIn }) => {
   return (
     <>
       <div>
@@ -14,14 +14,18 @@ const NavBar = () => {
             <img src={logo} alt="BotFlyLogo" className="w-16" />
             BotFly
           </NavLink>
-          <div>
-            <NavLink className="mx-2 btn-primary" to="/login">
-              Login
-            </NavLink>
-            <NavLink className="mx-2 btn-primary" to="/signup">
-              Signup
-            </NavLink>
-          </div>
+          {loggedIn ? (
+            <div>O</div>
+          ) : (
+            <div>
+              <NavLink className="mx-2 btn-primary" to="/login">
+                Login
+              </NavLink>
+              <NavLink className="mx-2 btn-primary" to="/signup">
+                Signup
+              </NavLink>
+            </div>
+          )}
         </nav>
       </div>
     </>
