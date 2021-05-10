@@ -24,12 +24,10 @@ function App() {
           />
           <Route path="/login" component={Login}></Route>
           <Route path="/signup" component={Signup} />
-          <Route path="/play">
+          <Route path="/play" exact>
             {loggedIn ? <Play /> : <Redirect to="/login" />}
           </Route>
-          <Route path="/play/:name">
-            
-          </Route>
+          <Route path="/play/:name" />
         </Switch>
       </div>
     </>

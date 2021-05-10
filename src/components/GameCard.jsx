@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const GameCard = ({name, cover, path}) => {
+const GameCard = ({ name, cover, path }) => {
   return (
     <>
-     <div>{name}</div> 
-     <div>{cover}</div>
+      <Link to={path}>
+        <div>{name}</div>
+        <div>{cover}</div>
+      </Link>
     </>
   );
 };

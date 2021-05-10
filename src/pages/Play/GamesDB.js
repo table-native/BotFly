@@ -1,16 +1,19 @@
+import TicTacToe from "./Games/TicTacToe";
+import Ludo from "./Games/Ludo";
+
 const data = [
   {
     name: "TicTacToe",
-    component: "./Play/Games/TicTacToe",
-    path: "/tictactoe",
+    component: TicTacToe,
+    path: "/play/tictactoe",
     img: "",
   },
   {
     name: "Ludo",
-    component: "./Play/Games/Ludo",
-    path: "/ludo",
+    component: Ludo,
+    path: "/play/ludo",
     img: "",
-  }
+  },
 ];
 
 export default data;

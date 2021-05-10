@@ -1,6 +1,6 @@
 import React from "react";
 
-const Play = () => {
+const TicTacToe = () => {
   const addCross = (e) => {
     e.target.classList.add("x");
   };
@@ -48,4 +48,4 @@ const Play = () => {
   );
 };
 
-export default Play;
+export default TicTacToe;
