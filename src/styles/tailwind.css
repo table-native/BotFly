@@ -4,7 +4,10 @@
 
 /* Source Code Pro and Itim font */
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 .btn-primary {
   @apply bg-green-600 px-3 py-0.5 text-black;
+}
+.btn-special {
+  @apply bg-gradient-to-b from-green-600 to-green-900 font-itim text-xl text-black px-3 py-1;
 }

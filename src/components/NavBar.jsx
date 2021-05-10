@@ -7,7 +7,10 @@ const NavBar = () => {
     <>
       <div>
         <nav className="w-full flex justify-between items-center p-4 bg-dark">
-          <NavLink className="font-itim text-2xl flex items-center uppercase" to="/">
+          <NavLink
+            className="font-itim text-xl sm:text-2xl flex items-center uppercase mr-1 sm:mr-0"
+            to="/"
+          >
             <img src={logo} alt="BotFlyLogo" className="w-16" />
             BotFly
           </NavLink>

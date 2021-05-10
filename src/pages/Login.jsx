@@ -11,12 +11,12 @@ const Login = () => {
   };
   return (
     <>
-      <div className="grid place-items-center">
+      <div className="grid place-items-center h-2/3">
         <form
           className="flex flex-col w-11/12 sm:w-2/3 lg:w-2/5 bg-transparentDarker rounded p-4"
           onSubmit={submitHandler}
         >
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" className="text-gray-500">Email</label>
           <input
             type="email"
             name="email"

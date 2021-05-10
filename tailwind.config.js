@@ -3,6 +3,23 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      keyframes: {
+        updown: {
+          "0%": {
+            transform: "translateY(10px)",
+          },
+          "100%": {
+            transform: "translateY(-10px)",
+          },
+        },
+        
+      },
+      animation: {
+        'updown': 'updown 2s ease-in-out infinite alternate-reverse both'
+      },
+      width: {
+        hero: "26rem"
+      },
       fontFamily: {
         itim: ["itim"],
         mono: [

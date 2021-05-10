@@ -25728,6 +25728,10 @@ video {
   width: max-content;
 }
 
+.w-hero {
+  width: 26rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -29721,6 +29725,16 @@ video {
   }
 }
 
+@keyframes updown {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 .animate-none {
   animation: none;
 }
@@ -29739,6 +29753,10 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+.animate-updown {
+  animation: updown 2s ease-in-out infinite alternate-reverse both;
 }
 
 .mix-blend-normal {
@@ -30381,7 +30399,7 @@ video {
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
 .btn-primary {
   --tw-bg-opacity: 1;
@@ -30390,6 +30408,22 @@ video {
   padding-right: 0.75rem;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.btn-special {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: #059669;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(5, 150, 105, 0));
+  --tw-gradient-to: #064e3b;
+  font-family: itim;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
@@ -55571,6 +55605,10 @@ video {
     width: max-content;
   }
 
+  .sm\:w-hero {
+    width: 26rem;
+  }
+
   .sm\:z-0 {
     z-index: 0;
   }
@@ -59551,6 +59589,10 @@ video {
 
   .sm\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .sm\:animate-updown {
+    animation: updown 2s ease-in-out infinite alternate-reverse both;
   }
 
   .sm\:mix-blend-normal {
@@ -85275,6 +85317,10 @@ video {
     width: max-content;
   }
 
+  .md\:w-hero {
+    width: 26rem;
+  }
+
   .md\:z-0 {
     z-index: 0;
   }
@@ -89255,6 +89301,10 @@ video {
 
   .md\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .md\:animate-updown {
+    animation: updown 2s ease-in-out infinite alternate-reverse both;
   }
 
   .md\:mix-blend-normal {
@@ -114979,6 +115029,10 @@ video {
     width: max-content;
   }
 
+  .lg\:w-hero {
+    width: 26rem;
+  }
+
   .lg\:z-0 {
     z-index: 0;
   }
@@ -118959,6 +119013,10 @@ video {
 
   .lg\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .lg\:animate-updown {
+    animation: updown 2s ease-in-out infinite alternate-reverse both;
   }
 
   .lg\:mix-blend-normal {
@@ -144683,6 +144741,10 @@ video {
     width: max-content;
   }
 
+  .xl\:w-hero {
+    width: 26rem;
+  }
+
   .xl\:z-0 {
     z-index: 0;
   }
@@ -148663,6 +148725,10 @@ video {
 
   .xl\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .xl\:animate-updown {
+    animation: updown 2s ease-in-out infinite alternate-reverse both;
   }
 
   .xl\:mix-blend-normal {
@@ -174387,6 +174453,10 @@ video {
     width: max-content;
   }
 
+  .\32xl\:w-hero {
+    width: 26rem;
+  }
+
   .\32xl\:z-0 {
     z-index: 0;
   }
@@ -178367,6 +178437,10 @@ video {
 
   .\32xl\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .\32xl\:animate-updown {
+    animation: updown 2s ease-in-out infinite alternate-reverse both;
   }
 
   .\32xl\:mix-blend-normal {
