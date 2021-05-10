@@ -11578,8 +11578,8 @@ video {
   font-family: Source Code Pro, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-Itim {
-  font-family: Itim;
+.font-itim {
+  font-family: itim;
 }
 
 .font-thin {
@@ -41434,8 +41434,8 @@ video {
     font-family: Source Code Pro, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .sm\:font-Itim {
-    font-family: Itim;
+  .sm\:font-itim {
+    font-family: itim;
   }
 
   .sm\:font-thin {
@@ -71138,8 +71138,8 @@ video {
     font-family: Source Code Pro, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .md\:font-Itim {
-    font-family: Itim;
+  .md\:font-itim {
+    font-family: itim;
   }
 
   .md\:font-thin {
@@ -100842,8 +100842,8 @@ video {
     font-family: Source Code Pro, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .lg\:font-Itim {
-    font-family: Itim;
+  .lg\:font-itim {
+    font-family: itim;
   }
 
   .lg\:font-thin {
@@ -130546,8 +130546,8 @@ video {
     font-family: Source Code Pro, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .xl\:font-Itim {
-    font-family: Itim;
+  .xl\:font-itim {
+    font-family: itim;
   }
 
   .xl\:font-thin {
@@ -160250,8 +160250,8 @@ video {
     font-family: Source Code Pro, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .\32xl\:font-Itim {
-    font-family: Itim;
+  .\32xl\:font-itim {
+    font-family: itim;
   }
 
   .\32xl\:font-thin {

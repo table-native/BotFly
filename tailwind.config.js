@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Itim: ["Itim"],
+        itim: ["itim"],
         mono: [
           "Source Code Pro",
           "ui-monospace",
