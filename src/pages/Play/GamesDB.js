@@ -5,13 +5,13 @@ const data = [
   {
     name: "TicTacToe",
     component: TicTacToe,
-    path: "/games/tictactoe",
+    path: "tictactoe",
     img: "",
   },
   {
     name: "Ludo",
     component: Ludo,
-    path: "/games/ludo",
+    path: "ludo",
     img: "",
   },
 ];

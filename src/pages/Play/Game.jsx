@@ -1,11 +1,10 @@
 import React from "react";
-import { useLocation, useParams } from "react-router";
+import { useParams } from "react-router";
 import GamesDB from "./GamesDB";
 
 const Game = () => {
   const { name } = useParams();
-  const path = useLocation().pathname;
-  const currGame = GamesDB.filter((e) => e.path === path);
+  const currGame = GamesDB.filter((e) => e.path === name);
   let Game;
   if (currGame !== [] && currGame.length === 1) {
     Game = currGame[0].component;
