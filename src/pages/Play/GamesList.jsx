@@ -9,7 +9,7 @@ const GamesList = () => {
         {GamesDB.map((e) => {
           return (
             <>
-              <GameCard name={e.name} cover={e.img} path={`/games/${e.path}`} />
+              <GameCard key={e.id} name={e.name} cover={e.img} path={`/games/${e.path}`} />
             </>
           );
         })}

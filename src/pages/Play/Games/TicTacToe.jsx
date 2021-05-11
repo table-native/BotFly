@@ -6,7 +6,7 @@ const TicTacToe = () => {
   };
   return (
     <>
-      <div className="grid place-items-center gap-4 m-4 text-2xl">
+      <div className="grid place-items-center gap-4 m-4 text-2xl grid-rows-2">
         <div className="border-l-8 border-r-8 border-transparentDark rounded w-full h-full p-5 grid place-items-center">
           <div className=" grid grid-cols-3 grid-rows-3 w-max">
             <div onClick={addCross} className="square square-t-1">
@@ -38,13 +38,15 @@ const TicTacToe = () => {
             </div>
           </div>
         </div>
-        <div className="bg-transparentDark rounded w-full h-full p-3">
+        <div className="bg-transparentDark text-green-500 rounded w-full max-h-60 p-3 overflow-scroll ">
           <div>{"const makeMove = (gameState, availaibleMoves) => {"}</div>
-          <pre>
-            <code className="">
-              const move = availaibleMoves[4]; return move;
-            </code>
-          </pre>
+          <div
+            contentEditable
+            suppressContentEditableWarning
+            className="focus:outline-none"
+          >
+            const move = availaibleMoves[5]; <br /> return move;
+          </div>
           <div>{"}"}</div>
         </div>
       </div>

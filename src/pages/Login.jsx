@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import { Redirect } from "react-router";
+import { useHistory } from "react-router";
 
 const Login = ({ loggedIn, setLoggedIn }) => {
   const [email, setEmail] = useState("");
   const inputHandler = (e) => {
     setEmail(e.target.value);
   };
+  const history = useHistory();
   const submitHandler = (e) => {
     e.preventDefault();
-    if (/\s/.test(email)) {
+    if (/\S/.test(email)) {
       setLoggedIn(true);
-      <Redirect to="/games" />;
+      console.log("User is logged in now!");
+      history.push("/games")
     }
   };
   return (
