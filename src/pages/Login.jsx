@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+import { Redirect } from "react-router";
 
-const Login = () => {
+const Login = ({ loggedIn, setLoggedIn }) => {
   const [email, setEmail] = useState("");
   const inputHandler = (e) => {
     setEmail(e.target.value);
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(email);
+    if (/\s/.test(email)) {
+      setLoggedIn(true);
+      <Redirect to="/games" />;
+    }
   };
   return (
     <>
@@ -16,7 +20,9 @@ const Login = () => {
           className="flex flex-col w-11/12 sm:w-2/3 lg:w-2/5 bg-transparentDarker rounded p-4"
           onSubmit={submitHandler}
         >
-          <label htmlFor="email" className="text-gray-500">Email</label>
+          <label htmlFor="email" className="text-gray-500">
+            Email
+          </label>
           <input
             type="email"
             name="email"

@@ -10,7 +10,7 @@ import Game from "./pages/Play/Game";
 import PNF from "./pages/PNF";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(false);
 
   return (
     <>
@@ -24,7 +24,12 @@ function App() {
             )}
             exact
           />
-          <Route path="/login" component={Login}></Route>
+          <Route
+            path="/login"
+            component={() => (
+              <Login loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+            )}
+          />
           <Route path="/signup" component={Signup} />
           <Route path="/games" exact>
             {loggedIn ? <GamesList /> : <Redirect to="/login" />}

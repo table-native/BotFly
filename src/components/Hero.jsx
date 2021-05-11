@@ -7,7 +7,7 @@ const Hero = ({ loggedIn, setLoggedIn }) => {
     <>
       <div className="grid lg:grid-cols-2 place-items-center h-4/5 sm:h-3/4">
         <div className="uppercase flex flex-col p-6 row-start-2 lg:row-start-1 text-center lg:text-left">
-          <h1 className="font-itim text-2xl sm:3xl lg:text-5xl">
+          <h1 className="font-itim text-gray-300 text-2xl sm:3xl lg:text-5xl">
             The Gaming Platform{" "}
             <div className="inline-block lg:block">
               where your code <div className="inline-block lg:block">plays</div>
