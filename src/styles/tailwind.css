@@ -14,9 +14,11 @@
 .square {
   @apply w-20 h-20 border-2;
 }
-.x {
-  @apply bg-green-500;
+::-webkit-scrollbar {
+  @apply w-2 bg-gray-400 bg-opacity-5;
 }
-.o {
-  @apply bg-red-500;
+
+.custom-scrollbar {
+  scrollbar-color: rgba(255, 255, 255, 0.212) rgba(47, 48, 51, 0.795);
+  scrollbar-width: thin;
 }

@@ -34,11 +34,10 @@ function App() {
           <Route
             path="/games"
             component={() =>
-              loggedIn ? <GamesList key="games" /> : <Redirect to="/login" />
+              loggedIn ? <GamesList /> : <Redirect to="/login" />
             }
             exact
           />
-
           <Route
             path="/games/:name"
             component={() => (loggedIn ? <Game /> : <Redirect to="/login" />)}

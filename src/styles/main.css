@@ -26313,7 +26313,7 @@ video {
 }
 
 .grid-cols-autofill {
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
 }
 
 .auto-cols-auto {
@@ -30438,14 +30438,16 @@ video {
   width: 5rem;
 }
 
-.x {
+::-webkit-scrollbar {
   --tw-bg-opacity: 1;
-  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.05;
+  width: 0.5rem;
 }
 
-.o {
-  --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+.custom-scrollbar {
+  scrollbar-color: rgba(255, 255, 255, 0.212) rgba(47, 48, 51, 0.795);
+  scrollbar-width: thin;
 }
 
 @media (min-width: 640px) {
@@ -56210,7 +56212,7 @@ video {
   }
 
   .sm\:grid-cols-autofill {
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
   }
 
   .sm\:auto-cols-auto {
@@ -85926,7 +85928,7 @@ video {
   }
 
   .md\:grid-cols-autofill {
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
   }
 
   .md\:auto-cols-auto {
@@ -115642,7 +115644,7 @@ video {
   }
 
   .lg\:grid-cols-autofill {
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
   }
 
   .lg\:auto-cols-auto {
@@ -145358,7 +145360,7 @@ video {
   }
 
   .xl\:grid-cols-autofill {
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
   }
 
   .xl\:auto-cols-auto {
@@ -175074,7 +175076,7 @@ video {
   }
 
   .\32xl\:grid-cols-autofill {
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
   }
 
   .\32xl\:auto-cols-auto {

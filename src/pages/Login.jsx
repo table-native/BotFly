@@ -11,7 +11,6 @@ const Login = ({ loggedIn, setLoggedIn }) => {
     e.preventDefault();
     if (/\S/.test(email)) {
       setLoggedIn(true);
-      console.log("User is logged in now!");
       history.push("/games")
     }
   };

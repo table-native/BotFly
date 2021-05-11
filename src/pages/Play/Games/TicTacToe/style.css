@@ -1,0 +1,9 @@
+.x {
+  background-image: url("./img/cross.png");
+  background-size: cover;
+}
+
+.o {
+  background-image: url("./img/circle.png");
+  background-size: cover;
+}
