@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const GameCard = ({ name, cover, path }) => {
   return (
     <>
-      <Link to={path}>
+      <Link to={path} className="bg-transparentDarker rounded p-4 ">
+        <img src={cover} alt="" className="w-full"/>
         <div>{name}</div>
-        <div>{cover}</div>
       </Link>
     </>
   );

@@ -40,7 +40,7 @@ module.exports = {
         transparentDarker: "rgba(0, 0, 0, 0.28)",
       },
       gridTemplateColumns: {
-        autofill: "repeat(auto-fill, minmax(0, 1fr))",
+        autofill: "repeat(auto-fill, minmax(10rem, 1fr))",
       },
     },
   },

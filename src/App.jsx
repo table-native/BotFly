@@ -4,8 +4,10 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Play from "./pages/Play/Play";
+import GamesList from "./pages/Play/GamesList";
 import NavBar from "./components/NavBar";
+import Game from "./pages/Play/Game";
+import PNF from "./pages/PNF";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(true);
@@ -24,10 +26,11 @@ function App() {
           />
           <Route path="/login" component={Login}></Route>
           <Route path="/signup" component={Signup} />
-          <Route path="/play" exact>
-            {loggedIn ? <Play /> : <Redirect to="/login" />}
+          <Route path="/games" exact>
+            {loggedIn ? <GamesList /> : <Redirect to="/login" />}
           </Route>
-          <Route path="/play/:name" />
+          <Route path="/games/:name" component={Game} />
+          <Route component={PNF} />
         </Switch>
       </div>
     </>

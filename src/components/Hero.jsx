@@ -19,7 +19,7 @@ const Hero = ({ loggedIn, setLoggedIn }) => {
           <h2 className="font-mono text-md sm:text-xl text-gray-200">
             The Best Wins
           </h2>
-          <NavLink className="btn-special mt-3 lg:w-max" to="/play">
+          <NavLink className="btn-special mt-3 lg:w-max" to="/games">
             Take me to the game
           </NavLink>
         </div>

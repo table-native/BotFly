@@ -40,7 +40,11 @@ const TicTacToe = () => {
         </div>
         <div className="bg-transparentDark rounded w-full h-full p-3">
           <div>{"const makeMove = (gameState, availaibleMoves) => {"}</div>
-          <pre><code>const move = availaibleMoves[4]; return move;</code></pre>
+          <pre>
+            <code className="">
+              const move = availaibleMoves[4]; return move;
+            </code>
+          </pre>
           <div>{"}"}</div>
         </div>
       </div>
