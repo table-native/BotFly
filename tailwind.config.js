@@ -16,6 +16,9 @@ module.exports = {
       animation: {
         updown: "updown 2s ease-in-out infinite alternate-reverse both",
       },
+      height: {
+        '80vh': '80vh'
+      },
       width: {
         hero: "26rem",
       },

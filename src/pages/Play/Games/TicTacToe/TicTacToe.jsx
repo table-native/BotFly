@@ -6,8 +6,8 @@ import "./style.css";
 const TicTacToe = () => {
   return (
     <>
-      <div className="grid place-items-center gap-4 m-4 text-2xl grid-rows-2">
-        <div className="border-l-8 border-r-8 border-transparentDark rounded w-full h-full p-5 grid place-items-center">
+      <div className="grid place-items-center gap-4 m-4 text-2xl grid-rows-2 h-screen">
+        <div className="border-l-8 border-r-8 border-transparentDark rounded w-full p-5 grid place-items-center row-span-1">
           <div className=" grid grid-cols-3 grid-rows-3 w-max">
             <div className="square square-t-1">
               <div className=""></div>

@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className="font-mono h-screen text-gray-100 bg-gradient-to-b from-dark to-darker">
+      <div className="font-mono min-h-screen max-h-full overflow-y-scroll text-gray-100 bg-gradient-to-b from-dark to-darker">
         <NavBar loggedIn={loggedIn} />
         <Switch>
           <Route
