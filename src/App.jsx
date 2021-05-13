@@ -11,6 +11,7 @@ import PNF from "./pages/PNF";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
+  const [jwt, setJwt] = useState(null);
 
   return (
     <>
@@ -27,7 +28,7 @@ function App() {
           <Route
             path="/login"
             component={() => (
-              <Login loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+              <Login loggedIn={loggedIn} setLoggedIn={setLoggedIn} jwt={jwt} setJwt={setJwt} />
             )}
           />
           <Route path="/signup" component={Signup} />

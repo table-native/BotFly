@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
+import svc from "../gRPCservice";
+let proto = require("botfly-model/clientjs/user_service_pb");
 
-const Login = ({ loggedIn, setLoggedIn }) => {
+const Login = ({ loggedIn, setLoggedIn, jwt, setJwt }) => {
   const [email, setEmail] = useState("");
   const inputHandler = (e) => {
     setEmail(e.target.value);
@@ -10,8 +12,18 @@ const Login = ({ loggedIn, setLoggedIn }) => {
   const submitHandler = (e) => {
     e.preventDefault();
     if (/\S/.test(email)) {
-      setLoggedIn(true);
-      history.push("/games")
+      let uid = new proto.UserIdentity();
+      uid.setEmailid(email);
+      svc.userService.login(uid, null, (err, resp) => {
+        if (err) {
+          console.log("toot gaya.. dekho " + err);
+          return;
+        }
+
+        setLoggedIn(true);
+        setJwt(resp.jwt);
+        history.push("/games")
+      });
     }
   };
   return (
