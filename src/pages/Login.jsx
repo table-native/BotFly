@@ -28,7 +28,7 @@ const Login = ({ loggedIn, setLoggedIn, jwt, setJwt }) => {
   };
   return (
     <>
-      <div className="grid place-items-center h-2/3">
+      <div className="grid place-items-center h-80vh">
         <form
           className="flex flex-col w-11/12 sm:w-2/3 lg:w-2/5 bg-transparentDarker rounded p-4"
           onSubmit={submitHandler}
