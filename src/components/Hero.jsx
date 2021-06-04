@@ -5,18 +5,18 @@ import heroImage from "../assets/img/hero-img.svg";
 const Hero = ({ loggedIn, setLoggedIn }) => {
   return (
     <>
-      <div className="grid lg:grid-cols-2 place-items-center h-4/5 sm:h-3/4">
+      <div className="grid lg:grid-cols-2 place-items-center h-80vh">
         <div className="uppercase flex flex-col p-6 row-start-2 lg:row-start-1 text-center lg:text-left">
-          <h1 className="font-itim text-gray-300 text-2xl sm:3xl lg:text-5xl">
+          <h1 className="font-itim text-gray-300 text-xl sm:3xl lg:text-5xl">
             The Gaming Platform{" "}
             <div className="inline-block lg:block">
               where your code <div className="inline-block lg:block">plays</div>
             </div>
           </h1>
-          <h2 className="font-mono text-md sm:text-xl text-gray-500 mt-3">
+          <h2 className="font-mono text-sm sm:text-xl text-gray-500 mt-3">
             Make your bot to play with others
           </h2>
-          <h2 className="font-mono text-md sm:text-xl text-gray-200">
+          <h2 className="font-mono text-sm sm:text-xl text-gray-200">
             The Best Wins
           </h2>
           <NavLink className="btn-special mt-3 lg:w-max" to="/games">

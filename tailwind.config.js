@@ -17,7 +17,8 @@ module.exports = {
         updown: "updown 2s ease-in-out infinite alternate-reverse both",
       },
       height: {
-        '80vh': '80vh'
+        "80vh": "80vh",
+        "90vh": "90vh",
       },
       width: {
         hero: "26rem",
